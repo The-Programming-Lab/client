@@ -5,21 +5,21 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  fetch('http://auth-service/test')
-    .then((res) => res.json())
-    .then((data) => console.log("http://auth-service/test" + "\n" + data.message))
+  // fetch('http://auth-service/test')
+  //   .then((res) => res.json())
+  //   .then((data) => console.log("http://auth-service/test" + "\n" + data.message))
 
-  fetch('http://localhost:8000/test')
-    .then((res) => res.json())
-    .then((data) => console.log("http://localhost:8000/test" + "\n" + data.message))
+  // fetch('http://localhost:8000/test')
+  //   .then((res) => res.json())
+  //   .then((data) => console.log("http://localhost:8000/test" + "\n" + data.message))
 
-  fetch('http://10.68.2.34/test')
-    .then((res) => res.json())
-    .then((data) => console.log("http://10.68.2.34/test" + "\n" + data.message))
+  // fetch('http://10.68.2.34/test')
+  //   .then((res) => res.json())
+  //   .then((data) => console.log("http://10.68.2.34/test" + "\n" + data.message))
   
-  fetch('http://34.71.64.126/test')
-    .then((res) => res.json())
-    .then((data) => console.log("http://34.71.64.126/test" + "\n" + data.message))
+  // fetch('http://34.71.64.126/test')
+  //   .then((res) => res.json())
+  //   .then((data) => console.log("http://34.71.64.126/test" + "\n" + data.message))
 
 
 

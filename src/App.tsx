@@ -21,6 +21,14 @@ function App() {
     .then((res) => res.json())
     .then((data) => console.log("http://34.71.64.126/test" + "\n" + data.message))
 
+  fetch('http://test-service/test')
+    .then((res) => res.json())
+    .then((data) => console.log("http://test-service/test" + "\n" + data.message))
+  
+  fetch('http://test-service:8000/test')
+    .then((res) => res.json())
+    .then((data) => console.log("http://test-service:8000/test" + "\n" + data.message))
+
 
 
   return (

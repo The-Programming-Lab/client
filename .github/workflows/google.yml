@@ -63,16 +63,15 @@ jobs:
       with:
         cluster_name: ${{ env.GKE_CLUSTER }}
         location: ${{ env.GKE_ZONE }}
-       
-    - name: cache  
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - name: Cache
+      uses: actions/cache@v3.3.1
       with:
         node-version: 16
         cache: 'npm'
+        cache-dependency-path: subdir/package-lock.json
     - run: npm ci
     - run: npm test
-
+    
     # Build the Docker image
     - name: Build
       run: |-

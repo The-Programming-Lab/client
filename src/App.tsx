@@ -9,25 +9,14 @@ function App() {
     .then((res) => res.json())
     .then((data) => console.log("http://test-servic4/test" + "\n" + data.message))
 
-    fetch('http://10.68.8.246:80/test')
-    .then((res) => res.json())
-    .then((data) => console.log("http://10.68.8.246:80/test" + "\n" + data.message))
-
     fetch('http://10.68.8.246/test')
     .then((res) => res.json())
     .then((data) => console.log("http://10.68.8.246/test" + "\n" + data.message))
 
-    fetch('http://test-service3/test')
-    .then((res) => res.json())
-    .then((data) => console.log("http://test-service3/test" + "\n" + data.message))
   
-    fetch('http://34.71.64.126:80/test')
+    fetch('http://34.121.197.240/test')
     .then((res) => res.json())
-    .then((data) => console.log("http://34.71.64.126:80/test" + "\n" + data.message))
-
-    fetch('http://34.71.64.126/test')
-    .then((res) => res.json())
-    .then((data) => console.log("http://34.71.64.126/test" + "\n" + data.message))
+    .then((data) => console.log("http://34.121.197.240/test" + "\n" + data.message))
 
 
 
